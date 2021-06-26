@@ -158,10 +158,16 @@ body {
 /* -----------------Hero----------------------------------- */
 
 .hero {
+    max-width: 1600px;
+    height: 600px;
     background-color: var(--fotter-hero-bg);
+    background-image: url('../images/hero/comands.jpg');
+    background-size: cover;
+    background-position: center;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+    margin: 0 auto;
 }
 
 .hero-button {
@@ -208,6 +214,34 @@ body {
     margin-left: var(--card-set-gap);
     margin-top: var(--card-set-gap);
 }
+
+.features-set .item::before {
+    display: block;
+    content: '';
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: var(--button-section-bg);
+}
+
+.item-antenna::before {
+    background-image: url(../images/features/antenna.svg);
+}
+
+.item-clock::before {
+    background-image: url(../images/features/clock.svg);
+}
+
+.item-diagram::before {
+    background-image: url(../images/features/diagram.svg);
+}
+
+.item-astronaut::before {
+    background-image: url(../images/features/astronaut.svg);
+}
+
+.item-antenna::befor {}
 
 .features-title {
     font-weight: 700;
