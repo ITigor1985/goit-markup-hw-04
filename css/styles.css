@@ -98,6 +98,7 @@ body {
 .header-site-nav .list,
 .header-contact.list {
   display: flex;
+  align-items: center;
 }
 
 .header-site-nav .header-logo {
@@ -146,22 +147,28 @@ body {
   margin-right: 50px;
 }
 
-.header-contact .link.one::before {
-  content: '';
-  display: inline-flex;
+.header-contact .item {
+  display: flex;
+  align-items: center;
+  color: var(--main-text-color);
+}
 
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url(../images/header/envelope.svg);
-  background-position: center;
+.header-contact .item:hover {
+  color: var(--accent-color);
+}
+
+.icon-envelope {
   margin-right: 10px;
+  fill: currentColor;
   width: 16px;
   height: 12px;
 }
 
-.header-contact .link:hover,
-.header-contact .link:focus {
-  color: var(--accent-color);
+.icon-vector {
+  margin-right: 10px;
+  fill: currentColor;
+  width: 10px;
+  height: 16px;
 }
 
 /* -----------------Hero----------------------------------- */
