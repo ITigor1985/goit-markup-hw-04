@@ -259,9 +259,6 @@ body {
   background-image: url(../images/features/astronaut.svg);
 }
 
-.item-antenna::befor {
-}
-
 .features-title {
   font-weight: 700;
   font-size: 14px;
@@ -342,12 +339,13 @@ body {
   justify-content: center;
   text-decoration: none;
   color: #afb1b8;
-
+  border-radius: 50%;
   width: 44px;
   height: 44px;
 }
 
-.social-links .link:hover {
+.social-links .link:hover,
+.social-links .link:focus {
   color: var(--white-active-color);
   background-color: var(--accent-color);
   border-radius: 50%;
@@ -407,6 +405,11 @@ body {
   margin-top: var(--card-set-gap);
 }
 
+.list-card > .item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .portfolio-button {
   min-width: 73px;
   padding: 6px 22px;
@@ -451,6 +454,9 @@ body {
 /* ----------------------footer-------------- */
 
 .footer {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
   background-color: var(--fotter-hero-bg);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -502,11 +508,23 @@ body {
 .social {
   margin-left: 70px;
   margin-top: 12px;
-  color: #ffffff;
+  color: var(--white-active-color);
 }
 .social-text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer .link.color {
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer .link.color:hover,
+.footer .link.color:focus {
+  color: var(--white-active-color);
+  background-color: var(--accent-color);
 }
