@@ -138,6 +138,7 @@ body {
 .header-site-nav .link:hover,
 .header-site-nav .link:focus {
   color: var(--accent-color);
+  border: none;
 }
 
 .header-site-nav .link.current {
@@ -145,6 +146,8 @@ body {
 }
 
 .header-contact .link {
+  display: flex;
+  align-items: center;
   color: inherit;
   font-weight: 500;
   font-size: 14px;
@@ -163,19 +166,21 @@ body {
   color: var(--main-text-color);
 }
 
-.header-contact .item:hover,
-.header-contact .item:focus {
+.header-contact .link:hover,
+.header-contact .link:focus {
   color: var(--accent-color);
 }
 
 .icon-envelope {
   margin-right: 10px;
+  fill: currentColor;
   width: 16px;
   height: 12px;
 }
 
 .icon-vector {
   margin-right: 10px;
+  fill: currentColor;
   width: 10px;
   height: 16px;
 }
