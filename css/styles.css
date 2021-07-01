@@ -74,6 +74,16 @@ body {
   padding-bottom: 94px;
 }
 
+.current-color {
+  fill: currentColor;
+}
+
+.soc-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
 /*------------ END components--------------------------- */
 
 /* -----header----------------------------- */
@@ -159,14 +169,12 @@ body {
 
 .icon-envelope {
   margin-right: 10px;
-  fill: currentColor;
   width: 16px;
   height: 12px;
 }
 
 .icon-vector {
   margin-right: 10px;
-  fill: currentColor;
   width: 10px;
   height: 16px;
 }
@@ -233,17 +241,13 @@ body {
 }
 
 .features-set .icon-container {
-  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 120px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  background-color: var(--button-section-bg);
-}
+  margin-bottom: 30px;
 
-.icon-antenna {
-  width: 65px;
-  height: 70px;
+  background-color: var(--button-section-bg);
 }
 
 .features-title {
@@ -342,26 +346,35 @@ body {
   margin-right: 10px;
 }
 
-.icon-instagram {
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
+/* ---------------------Clients----------------------------- */
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
 }
-.icon-twitter {
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
+
+.clients-list .client {
+  flex-basis: calc((100% - 6 * var(--card-set-gap)) / 6);
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  height: 92px;
+  width: 170px;
+  overflow: hidden;
+  color: #afb1b8;
 }
-.icon-facebook {
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
+
+.clients-list .client:hover,
+.clients-list .client:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
-.icon-linkedin {
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
-}
+/* -------------------End CLients---------------------------- */
 
 /*------------------Portfolio----------------------------- */
 
